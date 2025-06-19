@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALPHANET</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="b3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: #181c20;
+      color: #f1f1f1;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+    }
+    .navbar {
+      background: #23272b;
+      border-bottom: 1px solid #333;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #00e0ff !important;
+      border-bottom: 3px solid #00e0ff;
+      padding-bottom: 8px;
+      width: fit-content;
+      margin: 0 auto;
+    }
+    .btn-menu {
+      background: #23272b;
+      color: #00e0ff;
+      border: 2px solid #00e0ff;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 12px 28px;
+      margin: 0 8px 8px 0;
+      transition: background 0.2s, color 0.2s, border 0.2s;
+      box-shadow: 0 2px 8px #0003;
+    }
+    .btn-menu.active, .btn-menu:hover {
+      background: #00e0ff;
+      color: #181c20;
+      border-color: #00e0ff;
+    }
+    .container-main {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #23272b;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px #0006;
+      padding: 32px 24px;
+    }
+    .menu-section { display: none; }
+    .menu-section.active { display: block; }
+    .card {
+      background: #23272b;
+      border: 1px solid #333;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      color: #f1f1f1;
+    }
+    .card .nama-paket {
+      font-size: 1.35rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+      color: #00e0ff;
+    }
+    .card .harga-paket {
+      font-size: 1.18rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .btn-beli, .btn-hubungi {
+      background: #00e0ff;
+      color: #181c20;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      padding: 8px 24px;
+      transition: background 0.2s;
+    }
+    .btn-beli:hover, .btn-hubungi:hover {
+      background: #00b8cc;
+      color: #fff;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+    @media (max-width: 600px) {
+      .card .d-flex .flex-grow-1 {
+        justify-content: space-between !important;
+      }
+    }
+    .btn-alphanet {
+      display: block;
+      margin: 0 auto;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #fff;
+      background: #00e0ff;
+      border: none;
+      border-radius: 18px;
+      padding: 12px 36px;
+      width: fit-content;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 16px #00e0ff33;
+    }
+    .btn-alphanet:focus, .btn-alphanet:hover {
+      background: #00b8cc;
+      color: #181c20;
+      outline: none;
+      box-shadow: 0 4px 24px #00e0ff55;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand navbar-dark">
+    <div class="container">
+      <button class="btn btn-alphanet mx-auto w-100" type="button">ALPHANET</button>
+    </div>
+  </nav>
+  <div class="container-main">
+    <div class="text-center mb-4">
+      <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+        <button class="btn btn-menu" id="menu-voucher">Voucher</button>
+        <button class="btn btn-menu" id="menu-internet">Internet Rumahan</button>
+        <button class="btn btn-menu" id="menu-pemasangan">Pemasangan</button>
+      </div>
+    </div>
+    <!-- Voucher Section -->
+    <div class="menu-section active" id="section-voucher">
+      <h2 class="mb-4">Pilih Paket Voucher</h2>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET 4 JAM</div>
+          <div class="harga-paket">Rp. 2.000</div>
+          <div class="text-muted">Masa Aktif 4 jam</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20membeli%20PAKET%204%20JAM%20Voucher%20Wifi">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET 10 JAM</div>
+          <div class="harga-paket">Rp. 3.000</div>
+          <div class="text-muted">Masa Aktif 10 jam</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20membeli%20PAKET%2010%20JAM%20Voucher%20Wifi">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET 24 JAM</div>
+          <div class="harga-paket">Rp. 5.000</div>
+          <div class="text-muted">Masa Aktif 24 jam</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20membeli%20PAKET%2024%20JAM%20Voucher%20Wifi">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET 3 HARI</div>
+          <div class="harga-paket">Rp. 10.000</div>
+          <div class="text-muted">Masa Aktif 3 HARI</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20membeli%20PAKET%203%20HARI%20Voucher%20Wifi">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET 1 MINGGU</div>
+          <div class="harga-paket">Rp. 20.000</div>
+          <div class="text-muted">Masa Aktif 1 MINGGU</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20membeli%20PAKET%201%20MINGGU%20Voucher%20Wifi">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET 2 MINGGU</div>
+          <div class="harga-paket">Rp. 30.000</div>
+          <div class="text-muted">Masa Aktif 2 MINGGU</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20membeli%20PAKET%202%20MINGGU%20Voucher%20Wifi">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET 1 BULAN</div>
+          <div class="harga-paket">Rp. 50.000</div>
+          <div class="text-muted">Masa Aktif 1 BULAN</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20membeli%20PAKET%201%20BULAN%20Voucher%20Wifi">BELI</a>
+        </div>
+      </div>
+    </div>
+    <!-- Internet Rumahan Section -->
+    <div class="menu-section" id="section-internet">
+      <h2 class="mb-4">Paket Internet Rumahan</h2>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET HOME BASIC</div>
+          <div class="harga-paket">Rp. 100.000 <span class="text-muted">/Bulan</span></div>
+          <div class="text-muted">Speed 3Mbps</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20berlangganan%20PAKET%20HOME%20BASIC%20Internet%20Rumahan">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET HOME PRO</div>
+          <div class="harga-paket">Rp. 120.000 <span class="text-muted">/Bulan</span></div>
+          <div class="text-muted">Speed 5Mbps</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20berlangganan%20PAKET%20HOME%20PRO%20Internet%20Rumahan">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET HOME PREMIUM</div>
+          <div class="harga-paket">Rp. 160.000 <span class="text-muted">/Bulan</span></div>
+          <div class="text-muted">Speed 7Mbps</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20berlangganan%20PAKET%20HOME%20PREMIUM%20Internet%20Rumahan">BELI</a>
+        </div>
+      </div>
+      <div class="card p-3 mb-3">
+        <div>
+          <div class="nama-paket">PAKET HOME PLATINUM</div>
+          <div class="harga-paket">Rp. 220.000 <span class="text-muted">/Bulan</span></div>
+          <div class="text-muted">Speed 10Mbps</div>
+        </div>
+        <div class="mt-3 text-center">
+          <a class="btn btn-beli" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20berlangganan%20PAKET%20HOME%20PLATINUM%20Internet%20Rumahan">BELI</a>
+        </div>
+      </div>
+    </div>
+    <!-- Pemasangan Section -->
+    <div class="menu-section" id="section-pemasangan">
+      <h2 class="mb-4">Pemasangan Internet</h2>
+      <p>ALPHANET WIFI Solusi murah dan mudah untuk anda.<br>
+      Kini hadir di Desa Sukasari Kp. Cimuti untuk memenuhi kebutuhan internet anda.<br>
+      Jika anda berada di daerah Desa Sukasari Karang Tengah Cianjur dan membutuhkan internet STABIL, Murah dan Mudah Silahkan Hubungi Kami.</p>
+      <a class="btn btn-hubungi" target="_blank" href="https://wa.me/62895619611440?text=Halo%20saya%20ingin%20memasang%20internet%20ALPHANET%20di%20rumah%20saya">Hubungi</a>
+    </div>
+  </div>
+  <div class="footer">&copy; 2024 ALPHANET. All rights reserved.</div>
+  <script src="b3/js/bootstrap.min.js"></script>
+  <script>
+    // Navigasi menu
+    const menuVoucher = document.getElementById('menu-voucher');
+    const menuInternet = document.getElementById('menu-internet');
+    const menuPemasangan = document.getElementById('menu-pemasangan');
+    const sectionVoucher = document.getElementById('section-voucher');
+    const sectionInternet = document.getElementById('section-internet');
+    const sectionPemasangan = document.getElementById('section-pemasangan');
+    function setActive(menu, section) {
+      [menuVoucher, menuInternet, menuPemasangan].forEach(m => m.classList.remove('active'));
+      [sectionVoucher, sectionInternet, sectionPemasangan].forEach(s => s.classList.remove('active'));
+      menu.classList.add('active');
+      section.classList.add('active');
+    }
+    menuVoucher.onclick = e => { e.preventDefault(); setActive(menuVoucher, sectionVoucher); };
+    menuInternet.onclick = e => { e.preventDefault(); setActive(menuInternet, sectionInternet); };
+    menuPemasangan.onclick = e => { e.preventDefault(); setActive(menuPemasangan, sectionPemasangan); };
+    // Set default aktif di Voucher
+    setActive(menuVoucher, sectionVoucher);
+  </script>
+</body>
+</html> 
